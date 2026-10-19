@@ -2,8 +2,11 @@ name: Publicar Campaña en Foros
 
 on:
   schedule:
-    - cron: '0 */8 * * *' # Se ejecuta cada 8 horas (00:00, 08:00, 16:00 UTC)
-  workflow_dispatch: # Permite ejecución manual
+    - cron: '0 */8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write # Necesario para guardar el progreso
 
 jobs:
   publicar:
@@ -20,4 +23,12 @@ jobs:
         run: pip install requests
         
       - name: Ejecutar Bot de Foros
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: python bot_foros.py
+
+      - name: Guardar Estado de la Imagen
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update: Siguiente imagen en cola"
+          file_pattern: 'state.json'
