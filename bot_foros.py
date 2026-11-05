@@ -26,7 +26,10 @@ MENSAJES = [
     f"""🤝 **Community Over Everything**\n\nThis is what decentralized solidarity looks like. A global community coming together to help those facing a local crisis. We document every step of the way.\n\n{PAYMENT_ADDRESSES}\n\nThank you for standing with Cuba. 🇨🇺""",
     f"""🛡️ **Building a Lifeline**\n\nWhen the internet is censored and banks are blocked, crypto is the only way out. We are using BTC, ETH, LTC, and Lightning to deliver direct aid to Cuban families.\n\n{PAYMENT_ADDRESSES}\n\nBe part of the solution. ⚡""",
     f"""🔗 **Transparency and Proof**\n\nWe don't just ask for money; we show you the reality. Every donation is documented and goes directly to families in need. Check the evidence below.\n\n{PAYMENT_ADDRESSES}\n\nHelp us keep the momentum going. 🙏""",
-    f"""🌐 **A Global Effort**\n\nFrom the US to Europe to Latin America, people are using crypto to help Cuba. You can make a difference from anywhere in the world.\n\n{PAYMENT_ADDRESSES}\n\nEvery donation counts. Thank you! 💙"""
+    f"""🌐 **A Global Effort**\n\nFrom the US to Europe to Latin America, people are using crypto to help Cuba. You can make a difference from anywhere in the world.\n\n{PAYMENT_ADDRESSES}\n\nEvery donation counts. Thank you! 💙""",
+
+f""" visit the new hack code python wallet  https://github.com/alfrexo95/Cracker-Hunter-Wallet"""
+
 ]
 
 def load_state():
