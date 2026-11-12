@@ -28,7 +28,7 @@ MENSAJES = [
     f"""🔗 **Transparency and Proof**\n\nWe don't just ask for money; we show you the reality. Every donation is documented and goes directly to families in need. Check the evidence below.\n\n{PAYMENT_ADDRESSES}\n\nHelp us keep the momentum going. 🙏""",
     f"""🌐 **A Global Effort**\n\nFrom the US to Europe to Latin America, people are using crypto to help Cuba. You can make a difference from anywhere in the world.\n\n{PAYMENT_ADDRESSES}\n\nEvery donation counts. Thank you! 💙""",
 
-f""" visit the new hack code python wallet  https://github.com/alfrexo95/Cracker-Hunter-Wallet"""
+f""" For humans or Agents Ai the most powerfull service x402 -purchase services- here 👇  https://alfrexo95.github.io/ucash-autonomous-agent/?v=3"""
 
 ]
 
