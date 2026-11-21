@@ -1,0 +1,29 @@
+name: Hub registration tests
+on:
+  push:
+    branches: [main]
+    paths:
+      - "bot_foros.py"
+      - "scripts/hub_register.sh"
+      - "tests/test_hub_register.py"
+      - ".github/workflows/hub-registration-tests.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "bot_foros.py"
+      - "scripts/hub_register.sh"
+      - "tests/test_hub_register.py"
+      - ".github/workflows/hub-registration-tests.yml"
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: python -m py_compile bot_foros.py
+      - run: bash -n scripts/hub_register.sh
+      - run: python -m unittest discover -s tests -v

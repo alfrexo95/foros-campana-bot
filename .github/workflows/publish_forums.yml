@@ -32,3 +32,10 @@ jobs:
         with:
           commit_message: "Auto-update: Siguiente imagen en cola"
           file_pattern: 'state.json'
+
+      - name: Optional Predator Hub registration/heartbeat
+        continue-on-error: true
+        env:
+          INFRA_HUB_TOKEN: ${{ secrets.INFRA_HUB_TOKEN }}
+          INFRA_HUB_URL: https://x402-api-wigc.onrender.com
+        run: bash scripts/hub_register.sh
